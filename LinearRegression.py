@@ -30,6 +30,7 @@ for epoch in range(100):
   optimizer.step()  # Update parameters
 
 
+# Model prediction on new data
 new_var=torch.tensor([3.0])
 pred_y=model(new_var)
 print('Prediction:', pred_y.item())
